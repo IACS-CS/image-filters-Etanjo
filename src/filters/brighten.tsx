@@ -1,6 +1,6 @@
-import type { Filter } from "../../types";
+import type { Filter } from "../types";
 export default {
-  name: "Rose Colored Glasses",
+  name: "Let There Be Light",
   apply: (pixels: Uint8ClampedArray) => {
     for (let i = 0; i < pixels.length; i++) {
       // Pixels come in order of red, green, blue, alpha
@@ -10,11 +10,10 @@ export default {
       const isBlue = i % 4 === 2;
       const isAlpha = i % 4 === 3;
       // Now let's check its position in the array...
-      if (isRed) {
+
+      if (!isAlpha) {
         pixels[i] = pixels[i] + 100;
-      } else if (!isAlpha) {
-        pixels[i] = pixels[i] - 30;
-      } 
+      }
     }
     return pixels;
   },
