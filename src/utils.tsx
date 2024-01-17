@@ -19,11 +19,7 @@ export const hexToRGBA: (hex: string) => [number, number, number, number] = (
   return [r, g, b, a];
 };
 
-export const getIndexer = (
-  pixels: Uint8ClampedArray,
-  width: number,
-  height: number
-) => {
+export const getIndexer = (width: number) => {
   return (row: number, col: number) => {
     const redIndex = row * 4 * width + col * 4;
     const greenIndex = redIndex + 1;

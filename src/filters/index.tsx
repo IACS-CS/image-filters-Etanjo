@@ -6,6 +6,7 @@ import Twilight from "./samples/twilight";
 import antiblue from "./antiblue";
 import brighten from "./brighten";
 import darken from "./darken";
+import { border } from "./border";
 const filters: Filter[] = [
   Twilight,
   sampleRoseColoredGlasses,
@@ -14,6 +15,7 @@ const filters: Filter[] = [
   antiblue,
   brighten,
   darken,
+  border,
 ];
 
 export default filters;
