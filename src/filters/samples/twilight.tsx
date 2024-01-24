@@ -2,7 +2,6 @@ import type { Filter } from "../../types";
 export default {
   name: "Early 2000s Drama Film",
   apply: (pixels: Uint8ClampedArray) => {
-
     for (let i = 0; i < pixels.length; i++) {
       // Pixels come in order of red, green, blue, alpha
       // So we need to check if the current pixel is red, green, blue, or alpha
@@ -13,7 +12,7 @@ export default {
       // Now let's check its position in the array...
 
       if (isBlue) {
-        pixels[i] = pixels[i] + 30;
+        pixels[i] = pixels[i] + 40;
       } else if (isGreen) {
         pixels[i] = pixels[i] + 20;
       }

@@ -165,4 +165,14 @@ export const images: ImageInfo[] = [
     ),
     name: "Virtual Reality View",
   },
+  {
+    filename: "Appleguy.jpg",
+    attribution: "",
+    name: "Appleguy",
+  },
+  {
+    filename: "Miata.jpg",
+    attribution: "",
+    name: "Miata",
+  },
 ].map((i) => ({ ...i, url: `images/${i.filename}` }));

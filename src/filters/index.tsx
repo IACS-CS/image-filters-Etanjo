@@ -7,6 +7,7 @@ import antiblue from "./antiblue";
 import brighten from "./brighten";
 import darken from "./darken";
 import { border } from "./border";
+import { fourcorners } from "./fourcorners";
 const filters: Filter[] = [
   Twilight,
   sampleRoseColoredGlasses,
@@ -16,6 +17,7 @@ const filters: Filter[] = [
   brighten,
   darken,
   border,
+  fourcorners,
 ];
 
 export default filters;
