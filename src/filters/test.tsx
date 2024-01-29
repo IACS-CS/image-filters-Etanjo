@@ -22,14 +22,6 @@ export const test: Filter<MyFilterOptions> = {
     // Note that "color" options give you a string (e.g. a hex code)
     // and our utils library has a convenience function to convert
     // from RGB (or RGBA) hex codes into an array of numbers (0-255)
-    for (let c = 0; c < width / 2; c++) {
-      for (let row = 0; row < height; row++) {
-        const [r, g, b, a] = getIndexes(row, c);
-        pixels[r] = red;
-        pixels[g] = green;
-        pixels[b] = blue;
-      }
-    }
     for (let c = width; c > width / 2; c--) {
       for (let row = 0; row < height; row++) {
         const [r, g, b, a] = getIndexes(row, c);
