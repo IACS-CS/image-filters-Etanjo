@@ -49,11 +49,4 @@ export const fourcorners: Filter = {
     /* Modify pixels... */
     return pixels;
   },
-  options: [
-    {
-      name: "color",
-      type: "color",
-      default: "#ff0000",
-    },
-  ],
 };

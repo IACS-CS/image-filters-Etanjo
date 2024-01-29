@@ -1,6 +1,6 @@
 import type { Filter } from "../types";
 export default {
-  name: "I Love The Sun",
+  name: "Mexico",
   apply: (pixels: Uint8ClampedArray) => {
     for (let i = 0; i < pixels.length; i++) {
       // Pixels come in order of red, green, blue, alpha

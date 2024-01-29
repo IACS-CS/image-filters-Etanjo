@@ -8,7 +8,9 @@ import brighten from "./brighten";
 import darken from "./darken";
 import { border } from "./border";
 import { fourcorners } from "./fourcorners";
+import { test } from "./test";
 const filters: Filter[] = [
+  fourcorners,
   Twilight,
   sampleRoseColoredGlasses,
   sampleGrid,
@@ -17,7 +19,7 @@ const filters: Filter[] = [
   brighten,
   darken,
   border,
-  fourcorners,
+  test
 ];
 
 export default filters;
