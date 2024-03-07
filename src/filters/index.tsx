@@ -12,14 +12,11 @@ import { test } from "./test";
 const filters: Filter[] = [
   fourcorners,
   Twilight,
-  sampleRoseColoredGlasses,
-  sampleGrid,
-  sampleVignette,
   antiblue,
   brighten,
   darken,
   border,
-  test
+  //test
 ];
 
 export default filters;
