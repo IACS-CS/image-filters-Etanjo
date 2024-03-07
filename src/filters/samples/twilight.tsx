@@ -1,6 +1,6 @@
 import type { Filter } from "../../types";
 export default {
-  name: "Rose Colored Glasses",
+  name: "Early 2000s Drama Film",
   apply: (pixels: Uint8ClampedArray) => {
     for (let i = 0; i < pixels.length; i++) {
       // Pixels come in order of red, green, blue, alpha
@@ -10,11 +10,12 @@ export default {
       const isBlue = i % 4 === 2;
       const isAlpha = i % 4 === 3;
       // Now let's check its position in the array...
-      if (isRed) {
-        pixels[i] = pixels[i] + 100;
-      } else if (!isAlpha) {
-        pixels[i] = pixels[i] - 30;
-      } 
+
+      if (isBlue) {
+        pixels[i] = pixels[i] + 40;
+      } else if (isGreen) {
+        pixels[i] = pixels[i] + 20;
+      }
     }
     return pixels;
   },
